@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date?</title>
+  <link rel="icon"
+    href="https://static.vecteezy.com/system/resources/previews/012/658/336/original/heart-shaped-love-icon-symbol-for-pictogram-app-website-logo-or-graphic-design-element-format-png.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="style_for_date.css">
+</head>
+
+<body bgcolor="#ffc4e4">
+
+  <center>
+    <div class="container">
+      <form action="http://127.0.0.1:7667/button" method="post">
+      <h1>Ready for our first date?</h1><br>
+      <button type="submit" class="yes-btn" name="submit-btn" value="Yes"><b>Yes</b></button>
+      <button type="submit" id="movingButton" name="submit-btn"><b>No</b></button>
+      </form>
+    </div>
+  </center>
+  <div class="love">
+    <img src="love.png">
+    <img src="heart.png">
+    <img src="love.png">
+    <img src="heart.png">
+    <img src="love.png">
+    <img src="heart.png">
+  </div>
+
+  <script>
+
+    function moveit() {
+      x = (Math.floor(Math.random() * 300) - 48)
+      y = (Math.floor(Math.random() * 200) + 200)
+
+
+      const button = document.getElementById('movingButton');
+
+      button.style.position = 'absolute';
+      button.style.left = `${x}px`;
+      button.style.top = `${y}px`;
+    }
+
+  </script>
+
+</body>
+
+</html>

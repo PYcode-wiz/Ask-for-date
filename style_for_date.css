@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 760px;
+    position: relative;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
+    overflow: hidden;
+    color: #f46fa8;
+}
+
+.container {
+    width: 70%;
+    height: 80%;
+    transform: translate(2%, 150%);
+    padding: 20px;
+    background-color: #ffb3cc;
+    box-shadow: 5px 5px 10px rgba(255, 0, 90, 0.5);
+    border-radius: 15px;
+}
+
+button {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #f46fa8;
+    background: #ff1a4d;
+    color: #ffffff;
+}
+
+#movingButton {
+    align-items: center;
+}
+
+.yes-btn {
+    margin-right: 50px;
+}
+
+h1 {
+    color: #ff1a4d;
+    font-size: 30px;
+}
+
+
+.love img {
+    width: 40px;
+    animation: bubble 7s linear infinite;
+}
+
+.love {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 750px;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 2;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.love img:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.love img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.love img:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.love img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.love img:nth-child(5) {
+    animation-delay: 4.5s;
+}
+
+.love img:nth-child(6) {
+    animation-delay: 7s;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        height: 950px;
+        position: relative;
+        background-image: url("bg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 65%;
+        overflow: hidden;
+        color: #f46fa8;
+    }
+
+    .container {
+        width: 30%;
+        height: 80%;
+        transform: translate(65%, 145%);
+        padding: 30px;
+        background-color: #ffb3cc;
+        box-shadow: 5px 5px 10px rgba(255, 0, 90, 0.5);
+        border-radius: 15px;
+    }
+
+    .love {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: 650px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        height: 760px;
+        position: relative;
+        background-image: url("bg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 65%;
+        overflow: hidden;
+        color: #f46fa8;
+    }
+
+    .container {
+        width: 30%;
+        height: 80%;
+        transform: translate(65%, 145%);
+        padding: 30px;
+        background-color: #ffb3cc;
+        box-shadow: 5px 5px 10px rgba(255, 0, 90, 0.5);
+        border-radius: 15px;
+    }
+
+    .love {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: 650px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 30%;
+        height: 80%;
+        transform: translate(80%, 145%);
+        padding: 30px;
+        background-color: #ffb3cc;
+        box-shadow: 5px 5px 10px rgba(255, 0, 90, 0.5);
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (min-height: 1024px) {
+    body{
+        color: #ff6dac;
+    }
+    .container {
+        width: 30%;
+        height: 80%;
+        transform: translate(80%, 145%);
+        padding: 30px;
+        background-color: #ffb3cc;
+        box-shadow: 5px 5px 10px rgba(255, 0, 90, 0.5);
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        width: 100%;
+        height: 760px;
+        position: relative;
+        background-image: url("bg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 65% 70%;
+        overflow: hidden;
+        color: #f46fa8;
+    }
+    
+    .container {
+        width: 25%;
+        height: 150px;
+        transform: translate(100%, 120%);
+        padding: 30px;
+        background-color: #ffb3cc;
+        box-shadow: 5px 5px 10px rgba(255, 0, 90, 0.5);
+        border-radius: 15px;
+    }
+
+    h1 {
+        color: #ff1a4d;
+        font-size: 34px;
+        margin-top: 2%;
+    }
+
+    .love img {
+        width: 50px;
+        animation: bubble 7s linear infinite;
+    }
+
+    button {
+        width: 60px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 2px 2px 7px #f46fa8;
+        background: #ff1a4d;
+        color: #ffffff;
+        margin-top: 10%;
+    }
+}
